@@ -15,12 +15,6 @@ import SignUp from "./Pagee1/SignUp"
 import { useState, useEffect } from "react"
 const App = () => {
 
-  const [isloading,setisLoading] = useState(true)
-  useEffect(()=>{
-    setTimeout(()=>{
-      setisLoading(false)
-    },4000)
-  },[])
   const router = createBrowserRouter([
 
     
