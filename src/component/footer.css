@@ -139,21 +139,19 @@ gap: 3%;
 
     .footer-container{
         width: 100%;
-        height: 90%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: black; */
-        /* align-items: center; */
-        /* justify-content: center; */
+      
     }
      .one{
         width: 100%;
-        height: 30%;
+        height: 17%;
         
         h4{
-            font-size: 30px;
+            font-size: 35px;
         }
         p{
             font-size: 30px;
@@ -161,8 +159,8 @@ gap: 3%;
      }
      .two, .three, .four{
         width: 100%;
-        height: 40%;
-        /* border: 5px solid black; */
+        height: 17%;
+  
         h5{
             font-size: 34px;
         }

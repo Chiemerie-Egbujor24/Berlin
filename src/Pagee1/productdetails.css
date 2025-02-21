@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkout-wrappper{
+    width: 100%;
+    height: 45vh;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(170, 211, 227),rgb(184, 184, 243) );
+}
+
+.returning{
+    width: 100%;
+    height: 30vh;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickhere{
+  width: 70%;
+  height: 25%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  padding: 10px;
+  font-size: 25px;
+}

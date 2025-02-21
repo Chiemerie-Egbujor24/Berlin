@@ -73,11 +73,11 @@ const Header = () => {
 </div>
 <div className="cyclecart">25</div>
 <div className="cyclefav">02</div>
-<div className="cycle"><MdFavoriteBorder size={30}/></div>
+<div className="cycle"><MdFavoriteBorder size={39}/></div>
 
 <div className="cycle">
 <NavLink to={"/cart"}>
-<FaShoppingCart size={33} style={{Color:"black"}}/>
+<FaShoppingCart size={39} style={{Color:"black"}}/>
 </NavLink>
 </div>
 

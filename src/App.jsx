@@ -12,7 +12,7 @@ import Checkout from "./Pagee1/Checkout"
 import Login from "./Pagee1/Login"
 import SignUp from "./Pagee1/SignUp"
 // import Loading from "./assets/Loading"
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 const App = () => {
 
   const router = createBrowserRouter([

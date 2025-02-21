@@ -9,7 +9,7 @@ import product7 from "../Images/product7.webp"
 import product8 from "../Images/product8.webp"
 import product9 from "../Images/product9.webp"
 const Checkout = () => {
-  const [change, setChange] = useState(1)
+  const [change, setChange] = useState(0)
 
   function increment(){
     setChange(change + 1)
@@ -19,6 +19,9 @@ const Checkout = () => {
   function decrement(){
     
     setChange(change - 1)
+    if(change <=0){
+      return;
+    }
   }
   useEffect(()=>{
     const interval = setInterval(() =>{
@@ -66,9 +69,9 @@ const Checkout = () => {
     <div className="foam-quantity-container">
     <div className="foam-quantity">
       <p>Quantity</p>
-    <button className="minus">Minus</button>
-    <h3>0</h3>
-    <button className="plus">Plus</button>
+    <button onClick={decrement} className="minus">Minus</button>
+    <h3>{change}</h3>
+    <button onClick={increment} className="plus">Plus</button>
     <p>$9</p>
     </div>
 
