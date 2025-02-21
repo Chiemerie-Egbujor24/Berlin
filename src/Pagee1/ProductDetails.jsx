@@ -1,4 +1,4 @@
-import "./productdetails.css"
+// import "./productdetails.css"
 
 const ProductDetails = () => {
   return (
