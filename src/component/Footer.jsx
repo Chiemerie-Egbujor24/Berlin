@@ -34,7 +34,7 @@ const Footer = () => {
       <p>Privacy Policy</p>
       <p>Report a Payment Issue</p>
     </div>
-    </div>
+    </div><br /><br />
     <div className="footer-icon">
       <p>Copyright ©2025 All rights reserved | This template is made with  by Colorlib</p>
     <div className="social-media">

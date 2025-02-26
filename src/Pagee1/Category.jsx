@@ -1,23 +1,9 @@
 import "./category.css"
-import product4 from "../Images/product4.webp"
-import product5 from "../Images/product5.png.webp"
-import product6 from "../Images/product6.png.webp"
-import product7 from "../Images/product7.webp"
-import product8 from "../Images/product8.webp"
-import product9 from "../Images/product9.webp"
+
+import { products, products2 } from "../constant"
 const Category = () => {
 
-   const products=[
-      {id: 4, url: product4, title: "Green Dress with details", description:" $40.00 $60.00"},
-      {id: 5, url: product5, title: "Green Dress with details", description: "$40.00 $60.00"},
-      {id: 6, url: product6, title: "Green Dress with details", description: "$40.00 $60.00"},
-    ]
   
-    const products2=[
-      {id: 7, url: product7, title: "Green Dress with details", description: "$40.00 $60.00"},
-     {id: 8, url: product8, title: "Green Dress with details", description: "$40.00 $60.00"},
-     {id: 9, url: product9, title: "Green Dress with details", description: "$40.00 $60.00"},
-    ]
   return (
   <>
        <div className="Product-Catagori">Product Catagori</div> <br /><br />

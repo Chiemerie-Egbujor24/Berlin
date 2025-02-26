@@ -101,7 +101,8 @@ header{
             border: transparent;
             border-radius: 20px;
             padding: 10px;
-            font-size: 20px;
+            font-size: 13px;
+            border: none;
             
             
         }
@@ -109,7 +110,7 @@ header{
     }
 
     .cycle{
-        width: 11%;
+        width: 16%;
         height: 97%;
         border: 3px solid rgba(0, 0, 0, 0.515);
         display: flex;
@@ -203,11 +204,11 @@ header{
     .header3 .menu{
         display: block;
     }
-
+    .drawer
     .menu-drop{
         width: 40%;
         height: 25vh;
-        background-color: white;
+        background-color: rgb(184, 17, 17);
         position: absolute;
         display: flex;
         flex-direction: column;

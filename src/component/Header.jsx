@@ -5,8 +5,10 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";
+import { Drawer, Modal } from "antd";
 
 const Header = () => {
+  const [openmenu, setOpenmunu] =useState(false)
   const [drop1, setDrop1] = useState(false)
   const [blog, setBlog] = useState(false)
   const [pages, setPages]= useState(false)
@@ -71,17 +73,34 @@ const Header = () => {
   <FaSearch className="search" />
   
 </div>
-<div className="cyclecart">25</div>
-<div className="cyclefav">02</div>
-<div className="cycle"><MdFavoriteBorder size={39}/></div>
+{/* <div className="cyclecart">25</div>
+<div className="cyclefav">02</div> */}
+{/* <div className="cycle"><MdFavoriteBorder size={25}/></div> */}
 
 <div className="cycle">
 <NavLink to={"/cart"}>
-<FaShoppingCart size={39} style={{Color:"black"}}/>
+<FaShoppingCart size={25} style={{Color:"black"}}/>
 </NavLink>
 </div>
-
-  <TiThMenu size={39}  className="menu" onClick={handlemenu}/>
+<Drawer className="drawer" style={{width:"50%"}} 
+open={openmenu}
+onClose={()=> setOpenmunu(false)}
+cancelButtonProps={{hidden:true}}
+okButtonProps={{hidden:true}}
+closeIcon={false}
+placement="left"
+>
+<div className="menu-drop">
+<NavLink  className="navlink" to={""}><p>Home</p></NavLink>
+      <NavLink className="navlink" to={"/Category"}><p>Product Category</p></NavLink>
+      <NavLink className="navlink" to={"/login"}><p>Login</p></NavLink>
+      <NavLink className="navlink" to={"/signup"}><p>Sign Up</p></NavLink>
+      <NavLink className="navlink" to={"/checkout"}><p>Checkout</p></NavLink>
+      <NavLink className="navlink" to={"/productdetails"}><p>Product Details</p></NavLink>
+      </div>
+<div className="cycle"><MdFavoriteBorder size={25}/></div>
+</Drawer>
+  <TiThMenu size={30}  className="menu" onClick={()=>setOpenmunu(true)}/>
  
   
    </div>
