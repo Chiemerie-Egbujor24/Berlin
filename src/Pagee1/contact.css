@@ -1,0 +1,225 @@
+.contactWrapper{
+    width: 100%;
+    height:60vh ;
+    background-image: url("../Images/african-american-woman-using-her-smartphone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.get-in-touch{
+    width: 100%;
+    height: 60vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .black{
+        width: 70%;
+        height: 90%;
+        background-color: black;
+    }
+}
+
+
+.contact-us{
+    width: 100%;
+    height: 70vh;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us1{
+    width: 60%;
+    height: 99%;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    input{
+        border-radius: 0;
+        border: 2px solid rgba(0, 0, 0, 0.544);
+        height: 11%;
+        width: 100%;
+      
+
+    }
+
+    input::placeholder{
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.492);
+    }
+    h1{
+        font-size: 27px;
+        font-weight: 600;
+        font-family: Playfair Display;
+    }
+    textarea{
+        border-radius: 0;
+        width: 99%;
+        height: 40%;
+        display: flex;
+        align-items: none;
+        padding: 20px; 
+    }
+
+    textarea::placeholder{
+        font-size: 15px;
+    }
+    .name-email{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        /* border: 5px solid blue; */
+        input{
+            border-radius: 0;
+            border: 2px solid rgba(0, 0, 0, 0.544);
+            height: 100%;
+          
+
+        }
+
+        input::placeholder{
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.492);
+        }
+    }
+}
+
+.contact-us2{
+    width: 40%;
+    height: 90%;
+    /* border: 5px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+   
+}
+
+.contact-icon{
+    width: 20%;
+    height: 90%;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%;
+}
+
+.contact-text{
+    width: 50%;
+    height: 90%;
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+    .contact-text1{
+        width: 90%;
+        height: 20%;
+        /* border: 5px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-size: 16px;
+            color: rgb(42, 42, 42);
+            font-weight: 500;
+            font-family: Playfair Display;
+        }
+        p{
+            font-size: 19px;  
+            color: rgba(0, 0, 0, 0.612);
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .get-in-touch{
+        display: none;
+    }
+.contact-us{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid rgb(235, 17, 17); */
+}
+
+.contact-us1{
+    textarea{
+        height: 25%;
+        width: 99%;
+    }
+
+}
+
+
+
+.contact-text{
+    height: 99%;
+    width: 60%;
+    /* border: 5px solid black; */
+}
+.contact-text1{
+    width: 100% !important;
+    height: 20% !important;
+    /* border: 5px solid red; */
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+.contact-us2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0%;
+    /* border: 5px solid black; */
+    
+}
+
+
+
+.contact-us1{
+    width: 100%;
+    h1{
+        font-size: 20px;
+    }
+
+    button{
+        border-radius: 9%;
+        width: 27% !important;
+        height: 20% !important;
+        background-color: aqua;
+        border: none;
+        font-size: 17px;
+        
+    }
+
+    input{
+        font-size: 10px;
+        
+    }
+}
+}

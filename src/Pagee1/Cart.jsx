@@ -1,6 +1,14 @@
 import "./cart.css"
+import { useState } from "react";
 import { MdDelete } from "react-icons/md";
 const Cart = () => {
+    const [count, setCount] =useState(0)
+    function increment () {
+        setCount(count + 1)
+    }
+    function decrement (){
+        setCount(count - 1)
+    }
   return (
     <>
     <div className="cart-page">
@@ -18,9 +26,9 @@ const Cart = () => {
             <div className="quantity">
                 <p>QUANTITY</p><br /><br />
                 <div className="quantity-count1">
-                    <button>-</button>
-                    <h2>2</h2>
-                    <button>+</button>
+                    <button onClick={decrement}>-</button>
+                    <h2>{count}</h2>
+                    <button onClick={increment}>+</button>
                     </div><br />
 
             </div>

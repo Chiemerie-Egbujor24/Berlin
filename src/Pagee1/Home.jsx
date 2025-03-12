@@ -1,10 +1,11 @@
 import "./home.css"
 
 import { category, products, products2 } from "../constant"
+import { Fragment } from "react"
 const Home = () => {
 
   return (
-    <>
+    <Fragment>
       <div className="discount">
         <div className="image1"></div>
         <div className="text1">
@@ -170,7 +171,7 @@ const Home = () => {
         <div className="picture4"></div>
         <div className="picture5"></div>
       </div>
-    </>
+    </Fragment>
   )
 }
 

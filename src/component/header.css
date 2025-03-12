@@ -29,26 +29,13 @@ header{
     gap: 5%;
     justify-content: center;
     p{
-        font-size: 24px;
+        font-size: 14px; 
     }
 
    
 }
 
 .drop1{
-    width: 10%;
-    height:30%;
-    background-color: white;
-    position: absolute;
-    top:7%;
-    left: 31%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.drop2{
     width: 10%;
     height:30%;
     background-color: white;
@@ -61,13 +48,26 @@ header{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.drop2{
+    width: 10%;
+    height:30%;
+    background-color: white;
+    position: absolute;
+    top:7%;
+    left: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .drop3{
     width: 10%;
     height:30%;
     background-color: white;
     position: absolute;
     top:7%;
-    left: 41%;
+    left: 45%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -123,7 +123,12 @@ header{
 .navlink{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-weight: 400;
+    /* font-size: 14px; */
+    font-family: Poppins ;
+    p{
+        font-size: 14px; 
+    }
 }
 .navlink:hover{
     color: red;
@@ -132,7 +137,7 @@ header{
     width: 7%;
     height: 50%;
     border-radius: 50px;
-    background-color: skyblue;
+    background-color: black;
     position: absolute;
     right: 26%;
     bottom: 40%;
@@ -140,14 +145,14 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: rgb(249, 18, 18);
+    color: white;
 }
 
 .cyclefav{
     width: 7%;
     height: 50%;
     border-radius: 50px;
-    background-color: skyblue;
+    background-color: black;
     position: absolute;
     right: 6%;
     top: 7%;
@@ -155,7 +160,7 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: red;
+    color:white;
 }
 
 
@@ -164,7 +169,11 @@ header{
 }
 
 
-
+.navlink{
+    p{
+        font-size: 18px;
+   }
+}
 
 
 @media screen and (max-width: 720px) {
@@ -229,13 +238,24 @@ header{
     }
 
 
-    .drawer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: left;
-    padding: 10px;
 
+    .sidebar{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgb(170, 24, 24); */
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        padding: 10px;
+        p{
+            width: 100%;
+            height: 100%;
+            /* background-color: red; */
+        }
+
+        p:hover{
+            background-color: gray;
+        }
     }
    
 

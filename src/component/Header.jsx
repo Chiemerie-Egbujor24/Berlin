@@ -33,9 +33,9 @@ const Header = () => {
    <header>
    <h1>Egbujor<span style={{color:"red"}}>24</span></h1>
    <div className="header2">
-   <NavLink className={"navlink"} to={""} ><p style={{fontSize:"20px ", }}>Home</p></NavLink>
+   <NavLink className={"navlink"} to={""} ><p >Home</p></NavLink>
    <NavLink to={"/category"} className={"navlink"}><p>Category</p></NavLink>
-   <p style={{fontSize:"20px ", cursor:"pointer"  }} onClick={handledrop1}>Latest</p>
+   <p style={{ fontSize:"20px", cursor:"pointer"  }} onClick={handledrop1}>Latest</p>
    {
     drop1 ?  <div className="drop1">
       <NavLink to={"/productdetails"} className={"navlink"}><p>Checkout</p></NavLink>
@@ -72,13 +72,7 @@ const Header = () => {
   <div className="cyclefav">20</div>
 <NavLink to={"/cart"}>
 
-<Modal
-open={openpop}
-onClose={()=>setOpenpop(true)}
->
 
-
-</Modal>
 <div className="cyclecart">0</div>
 <FaShoppingCart size={25} style={{Color:"black"}} />
 </NavLink>
@@ -91,14 +85,15 @@ okButtonProps={{hidden:true}}
 closeIcon={false}
 placement="left"
 >
-
+<div className="sidebar">
 <NavLink  className={"navlink"} to={""}><p>Home</p></NavLink>
       <NavLink className={"navlink"} to={"/Category"}><p>Product Category</p></NavLink>
       <NavLink className={"navlink"} to={"/login"}><p>Login</p></NavLink>
       <NavLink className={"navlink"}to={"/signup"}><p>Sign Up</p></NavLink>
       <NavLink className={"navlink"} to={"/checkout"}><p>Checkout</p></NavLink>
       <NavLink className={"navlink"} to={"/productdetails"}><p>Product Details</p></NavLink>
-
+      <NavLink className={"navlink"} to={"/contact"}><p>Contact Us</p></NavLink>
+      </div>
 </Drawer>
 <div className="cycle"><MdFavoriteBorder size={25} onClick={() => setOpenpop(false)}/></div>
   <TiThMenu size={30}  className="menu" onClick={()=>setOpenmunu(true)}/>
@@ -107,12 +102,12 @@ placement="left"
    </div>
    {
     menu ? <div className="menu-drop">
-      <NavLink  className="navlink" to={""}><p>Home</p></NavLink>
-      <NavLink className="navlink" to={"/Category"}><p>Product Category</p></NavLink>
-      <NavLink className="navlink" to={"/login"}><p>Login</p></NavLink>
-      <NavLink className="navlink" to={"/signup"}><p>Sign Up</p></NavLink>
-      <NavLink className="navlink" to={"/checkout"}><p>Checkout</p></NavLink>
-      <NavLink className="navlink" to={"/productdetails"}><p>Product Details</p></NavLink>
+      <NavLink  className={"navlink"} to={""}><p>Home</p></NavLink>
+      <NavLink className={"navlink" }to={"/Category"}><p>Product Category</p></NavLink>
+      <NavLink className={"navlink"} to={"/login"}><p>Login</p></NavLink>
+      <NavLink className={"navlink" }to={"/signup"}><p>Sign Up</p></NavLink>
+      <NavLink className={"navlink"} to={"/checkout"}><p>Checkout</p></NavLink>
+      <NavLink className={"navlink"} to={"/productdetails"}><p>Product Details</p></NavLink>
     </div>:null
   }
    </header>

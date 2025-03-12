@@ -32,7 +32,7 @@ const SignUp = () => {
   return (
     <div className="signup-wrapper">
     <div className="signup-image">
-    <h1>Welcome To <br /><span>Estore</span></h1>
+    <h1>Welcome To <br />Egbujor<span>24</span></h1>
     </div>
     <div className="signup-text">
       <h2>Sign Up</h2>
@@ -51,7 +51,7 @@ const SignUp = () => {
      
       <button onClick={handleSignup}>Sign up</button>
       <span style={{fontSize:"20px"}}>Already have an account? <NavLink to={"/login"}
-    style={{textDecoration:"none",color:"red",fontSize:"25px",fontWeight:"bold"}}>Sign Up
+    style={{textDecoration:"none",color:"red",fontSize:"25px",fontWeight:"bold"}}>Log in
    </NavLink> </span>
     </div>
   </div>

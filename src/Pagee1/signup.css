@@ -14,19 +14,20 @@
     align-items: center;
     /* padding: 10px; */
     /* border: 5px solid black; */
-    background: url("../Images/sunset.jfif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  
 }
 
 .signup-image{
     width: 40%;
     height: 75%;
-    box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3);
+    /* box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3); */
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url("../Images/productDetails.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     h1{
         font-size: 60px;
     }
@@ -39,7 +40,7 @@
     width: 45%;
     height: 75%;
     /* background-color:black; */
-    box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3);
+    /* box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,15 +62,15 @@ input{
     border-radius: 30px;
     padding: 10px;
     font-size: 25px;
-    border: 4px solid white;
+    border: 4px solid gold;
     background-color: transparent;
 }
 input::placeholder{
     color: black;
 }
 button{
-    width: 70%;
-    height: 15%;
+    width: 70% !important;
+    height: 15% !important;
     border-radius: 30px;
     font-size: 25px;
     color: white;

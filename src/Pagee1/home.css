@@ -9,6 +9,7 @@
     width: 100%;
     height: 80vh;
     background: linear-gradient(rgb(170, 211, 227),rgb(184, 184, 243) );
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,12 +44,22 @@
         color: blue;
     }
     h1{
-        font-size: 130px;
+        font-size: 120px;
     }
     
     p{
         font-size: 35px;
         font-style: italic;
+    }
+    button{
+        width: 26% !important;
+        height: 12% !important;
+        border-radius: 30px;
+        font-size: 20px;
+        color: white;
+        background-color: blue;
+        font-weight: bold;
+        border: none;
     }
 }
 
@@ -66,16 +77,7 @@
 .text1{
     animation: slideIn 1s ease-out forwards;
 }
-button{
-    width: 26% !important;
-    height: 17% !important;
-    border-radius: 30px;
-    font-size: 20px;
-    color: white;
-    background-color: blue;
-    font-weight: bold;
-    border: none;
-}
+
 
 button:hover{
     color: red;
@@ -682,6 +684,8 @@ img{
 
 
   @media screen and (max-width: 1024px) {
+
+    Fragment
     *{
         padding: 0px;
         margin: 0px;
@@ -696,6 +700,7 @@ img{
         padding: 10px;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     
     .image1{
@@ -713,6 +718,16 @@ img{
         /* background-color: red; */
         padding: 10px;
         gap: 5%;
+        button{
+            width: 60% !important;
+            height: 20% !important;
+            border-radius: 25px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
         i{
             font-size: 30px;
             color: blue;
@@ -739,16 +754,7 @@ img{
         }
     }
     
-    button{
-        width: 60% !important;
-        height: 20% !important;
-        border-radius: 25px;
-        background-color: blue;
-        border: none;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-    }
+  
     
     
     h2{
@@ -766,6 +772,7 @@ img{
         align-items: center;
         justify-content: center;
         gap: 3%;
+        overflow: hidden;
     }
     
     .owmens-image-text-holder{
@@ -778,6 +785,7 @@ img{
         justify-content: space-around;
         position: relative;
         gap: 3%;
+        overflow: hidden;
     }
     
     .images2{
@@ -813,6 +821,7 @@ img{
         width: 100%;
         height: 20vh;
         /* background-color: orange; */
+        overflow: hidden;
     }
     
     .product{
@@ -824,6 +833,7 @@ img{
         justify-content: center;
         gap: 15%;
         padding: 10px;
+        overflow: hidden;
         h3{
             
             font-size: 40px;
@@ -837,6 +847,7 @@ img{
         flex-direction: row;
         gap: 10%;
         padding: 4px;
+        overflow: hidden;
        p{
         font-size: 23px;
        }
@@ -853,6 +864,7 @@ img{
         display: flex;
         flex-direction: column;
         /* background-color: black; */
+        overflow: hidden;
     }
     
     .image-price{
@@ -861,6 +873,7 @@ img{
        display: flex;
        flex-direction: column;
         /* background-color: red; */
+        overflow: hidden;
     }
     
     .image-part{
@@ -882,6 +895,7 @@ img{
         align-items: center;
         justify-content: center;
         position: relative;
+        overflow: hidden;
     }
     
     
@@ -919,6 +933,7 @@ img{
         height: 130Vh;
         position: relative;
         /* background-color: gold; */
+        overflow: hidden;
     }
     
     .collection1{
@@ -1006,6 +1021,7 @@ img{
     .our{
         width: 100%;
         height: 70vh;
+        overflow: hidden;
     }
     
     .our-child{
@@ -1074,6 +1090,7 @@ img{
         display: flex;
         flex-direction: column;
         /* background-color: aqua; */
+        overflow: hidden;
     }
     
     .picture1, .picture2,.picture3,.picture4,.picture5{

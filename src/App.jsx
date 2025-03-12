@@ -54,7 +54,11 @@ const App = () => {
           path:"/cart", element:<Cart/>
          },
       ]
+
     }
+
+    
+    
 
   ])
   return (

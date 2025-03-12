@@ -104,15 +104,15 @@ h3{
 }
 
 .minus,.plus{
-    width: 15%;
-    height: 25%;
+    width: 15% !important;
+    height: 28% !important;
     font-size: 25px;
     color: white;
 }
 
 .add{
-    width: 16%;
-    height: 25%;
+    width: 16% !important;
+    height: 28% !important;
 }
 
 .promotion{
@@ -144,12 +144,13 @@ h3{
         
         justify-content: space-between;
     }
-    .input{
-        width: 100%;
+    input{
+        width: 100% !important;
         height: 100% !important;
         display: flex;
         align-items: center;
         padding: 10px;
+        border: none !important;
         
         p{
             color: gray;
@@ -167,6 +168,10 @@ h3{
         font-size: 30px;
         color: white;
         position: absolute;
+    }
+    button:hover{
+        background-color: rgb(3, 3, 67);
+        /* transition: 30ms ease-in-out; */
     }
 }
 
@@ -308,9 +313,9 @@ h3{
         
     }
     
-    .button{
-        width: 35%;
-        height:8%;
+    .button0{
+        width: 35% !important;
+        height:8% !important;
         border-radius:50px ;
         background-color: blue;
         border: none;
