@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
     <div className="footer-container">
     <div className="one">
-     <h4>Estore</h4> <br />
+     <h4>Egbujor<span style={{color:"red"}}>24</span></h4> <br />
      <p>Lorem ipsum dolor sit amet consectetur adipisicing
        elit. Quae atque dolor error qui laborum commodi placeat 
        doloribus aut maxime nulla, asperiores dolorem magni

@@ -13,6 +13,7 @@ const Header = () => {
   const [blog, setBlog] = useState(false)
   const [pages, setPages]= useState(false)
   const [menu, setMenu]=useState(false)
+  const [openpop, setOpenpop]=useState(false)
   function handlemenu () {
     setMenu(!menu)
   }
@@ -30,41 +31,33 @@ const Header = () => {
   }
   return (
    <header>
-   <h1>Estore</h1>
+   <h1>Egbujor<span style={{color:"red"}}>24</span></h1>
    <div className="header2">
-   <NavLink to={""} style={{textDecoration:"none", fontSize:"24px", color:"black"}}><p>Home</p></NavLink>
-   <NavLink to={"/category"} style={{textDecoration:"none", fontSize:"24px", color:"black"}}><p>Category</p></NavLink>
-   <p onClick={handledrop1}>Latest</p>
+   <NavLink className={"navlink"} to={""} ><p style={{fontSize:"20px ", }}>Home</p></NavLink>
+   <NavLink to={"/category"} className={"navlink"}><p>Category</p></NavLink>
+   <p style={{fontSize:"20px ", cursor:"pointer"  }} onClick={handledrop1}>Latest</p>
    {
     drop1 ?  <div className="drop1">
-      <NavLink to={"/productdetails"} style={{
-        textDecoration:"none", fontSize:"24px", color:"black"
-      }}><p>Product Details</p></NavLink>
+      <NavLink to={"/productdetails"} className={"navlink"}><p>Checkout</p></NavLink>
     </div>:null
    }
 
-  <p onClick={handleblog}>Blog</p>
+  <p style={{fontSize:"20px ", cursor:"pointer" }} onClick={handleblog}>Blog</p>
    {
     blog ?  <div className="drop2"></div>:null
    }
 
-  <p onClick={handlepages}>Pages</p>
+  <p style={{fontSize:"20px ",cursor:"pointer" }} onClick={handlepages}>Pages</p>
    {
     pages ?  <div className="drop3">
-            <NavLink to={"/about"} style={{
-        textDecoration:"none", fontSize:"24px", color:"black"
-      }}><p>About</p></NavLink>
+            <NavLink className={"navlink"} to={"/about"}><p >About</p></NavLink>
 
-    <NavLink to={"/checkout"} style={{
-        textDecoration:"none", fontSize:"24px", color:"black"
-      }}><p>Checkout</p></NavLink>
+    <NavLink to={"/checkout"} className={"navlink"}><p>Product Details</p></NavLink>
 
-   <NavLink to={"/login"} style={{
-        textDecoration:"none", fontSize:"24px", color:"black"
-      }}><p>Login</p></NavLink>
+   <NavLink to={"/login"} className={"navlink"}><p>Login</p></NavLink>
     </div>:null
    }
-        <NavLink to={"/contact"} style={{textDecoration:"none", fontSize:"25px", color:"black"}}><p>Contact</p></NavLink>
+        <NavLink to={"/contact"} className={"navlink"}><p>Contact</p></NavLink>
    </div>
 
    <div className="header3">
@@ -73,16 +66,24 @@ const Header = () => {
   <FaSearch className="search" />
   
 </div>
-{/* <div className="cyclecart">25</div>
-<div className="cyclefav">02</div> */}
-{/* <div className="cycle"><MdFavoriteBorder size={25}/></div> */}
+
 
 <div className="cycle">
+  <div className="cyclefav">20</div>
 <NavLink to={"/cart"}>
-<FaShoppingCart size={25} style={{Color:"black"}}/>
+
+<Modal
+open={openpop}
+onClose={()=>setOpenpop(true)}
+>
+
+
+</Modal>
+<div className="cyclecart">0</div>
+<FaShoppingCart size={25} style={{Color:"black"}} />
 </NavLink>
 </div>
-<Drawer className="drawer" style={{width:"50%"}} 
+<Drawer className="drawer" style={{width:"55%"}} 
 open={openmenu}
 onClose={()=> setOpenmunu(false)}
 cancelButtonProps={{hidden:true}}
@@ -90,16 +91,16 @@ okButtonProps={{hidden:true}}
 closeIcon={false}
 placement="left"
 >
-<div className="menu-drop">
-<NavLink  className="navlink" to={""}><p>Home</p></NavLink>
-      <NavLink className="navlink" to={"/Category"}><p>Product Category</p></NavLink>
-      <NavLink className="navlink" to={"/login"}><p>Login</p></NavLink>
-      <NavLink className="navlink" to={"/signup"}><p>Sign Up</p></NavLink>
-      <NavLink className="navlink" to={"/checkout"}><p>Checkout</p></NavLink>
-      <NavLink className="navlink" to={"/productdetails"}><p>Product Details</p></NavLink>
-      </div>
-<div className="cycle"><MdFavoriteBorder size={25}/></div>
+
+<NavLink  className={"navlink"} to={""}><p>Home</p></NavLink>
+      <NavLink className={"navlink"} to={"/Category"}><p>Product Category</p></NavLink>
+      <NavLink className={"navlink"} to={"/login"}><p>Login</p></NavLink>
+      <NavLink className={"navlink"}to={"/signup"}><p>Sign Up</p></NavLink>
+      <NavLink className={"navlink"} to={"/checkout"}><p>Checkout</p></NavLink>
+      <NavLink className={"navlink"} to={"/productdetails"}><p>Product Details</p></NavLink>
+
 </Drawer>
+<div className="cycle"><MdFavoriteBorder size={25} onClick={() => setOpenpop(false)}/></div>
   <TiThMenu size={30}  className="menu" onClick={()=>setOpenmunu(true)}/>
  
   

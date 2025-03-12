@@ -66,10 +66,9 @@
 .text1{
     animation: slideIn 1s ease-out forwards;
 }
-
-.button1{
-    width: 34%;
-    height: 15%;
+button{
+    width: 26% !important;
+    height: 17% !important;
     border-radius: 30px;
     font-size: 20px;
     color: white;
@@ -78,9 +77,45 @@
     border: none;
 }
 
+button:hover{
+    color: red;
+}
+
 h2{
     font-size: 60px;
     text-align: center;
+}
+
+.owmens-image-text-holder{
+position: relative;
+}
+
+.texts2{
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    height: 30%;
+    top: 34%;
+    right: 4%;
+    position: absolute;
+    /* background-color: yellow; */
+    i{
+    font-size: 24px;
+    color: blue;
+    }
+
+    h3{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 80%;
+        height: 70%;
+        background-color: gold;
+    }
 }
 
 
@@ -288,15 +323,19 @@ img{
 }
 
 .button3{
-    width: 39%;
-    height: 20%;
+    width: 40% !important;
+    height: 19%;
     background-color: black;
     border-radius: 36px;
     color: white;
     font-size: 25px;
 }
 
-
+.button3:hover{
+    color: red;
+    background-color: white;
+    border: 3px solid black;
+}
 
 
 .collection{
@@ -312,7 +351,7 @@ img{
 
 .collection1{
     width: 25%;
-    height: 90%;
+    height: 95%;
     /* border: 5px solid black; */
     display: flex;
     padding: 10px;
@@ -329,13 +368,18 @@ img{
     }
 
     .button4{
-        width: 48%;
-        height: 10%;
+        width: 48% !important;
+        height: 30% !important;
         background-color:blue;
         border-radius: 36px;
         color: white;
         font-size: 25px;
     }
+    .button4:hover{
+        color: red;
+        background-color: rgb(10, 10, 41);
+    }
+    
 
     .trouser1{
         width: 60%;
@@ -524,7 +568,7 @@ img{
     }
 }
 
-.button2{
+.button0{
     width: 15% !important;
     height: 10% !important;
     border-radius:50px ;
@@ -535,7 +579,10 @@ img{
     font-size: 30px;
     color: white;
 }
-
+ .button0:hover{
+    color: red;
+   background-color:rgba(10, 10, 70, 0.807) ;
+ }
 
 
 .key{
@@ -692,9 +739,9 @@ img{
         }
     }
     
-    .button1{
-        width: 60%;
-        height: 20%;
+    button{
+        width: 60% !important;
+        height: 20% !important;
         border-radius: 25px;
         background-color: blue;
         border: none;
@@ -702,6 +749,7 @@ img{
         font-weight: bold;
         font-size: 20px;
     }
+    
     
     h2{
         text-align: center;
@@ -748,14 +796,16 @@ img{
         justify-content: center;
         /* background-color: yellow; */
         position: absolute;
-        right: 20%;
+        right: 12%;
         i{
             font-size: 25px;
             font-weight: bold;
             color: blue;
         }
         h3{
-            font-size: 33px;
+            font-size: 30px;
+            width: 150%;
+            height: 100%;
         }
     }
     
@@ -855,8 +905,8 @@ img{
         }
     
         .button3{
-            width: 60%;
-            height: 13%;
+            width: 60% !important;
+            height: 13% !important;
         }
     }
     
@@ -889,8 +939,8 @@ img{
         }
     
         .button4{
-            width: 50%;
-            height: 15%;
+            width: 50% !important;
+            height: 16% !important;
             background-color: blue;
             border: none;
             }
@@ -981,10 +1031,11 @@ img{
     }
     
     .input1-holder{
+        
         padding: 10px;
-        .button2{
-            width: 40%;
-            height: 9.05% !important;
+        .button0{
+            width: 30% !important;
+            height: 10% !important;
             position: absolute;
             right: 5%;
             font-size: 15px !important;
@@ -994,6 +1045,7 @@ img{
     .email{
         width: 50%;
         padding: 10px;
+        /* border: 5px solid black; */
         p{
             font-size: 17px !important;
         }

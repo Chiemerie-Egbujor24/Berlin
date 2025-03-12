@@ -7,13 +7,18 @@
 
 .Product-Catagori{
     width: 100%;
-    height: 45vh;
-   background: linear-gradient(rgb(170, 211, 227),rgb(184, 184, 243) );
+    height: 50vh;
+   /* background: linear-gradient(rgb(170, 211, 227),rgb(184, 184, 243) ); */
    justify-content: center;
    display: flex;
    font-size: 80px;
    font-weight: bold;
    align-items: center;
+   background-image: url("../Images/productDetails.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
 }
 
 
@@ -253,14 +258,13 @@
 
 
 
-
-
-  @media  (max-width: 720px) and (max-width:1024px) {
+  @media screen and (max-width: 1024px) {
     .Product-Catagori{
         width: 100%;
         height: 40vh;
         display: flex;
         align-items: center;
+        font-size: 30px;
     }
 .all2{
     width: 100%;

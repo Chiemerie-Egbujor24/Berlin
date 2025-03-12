@@ -113,10 +113,14 @@ background-size: cover;
 
 
 
-@media  (max-width: 720px) and (max-width:1025px) {
+
+@media screen and (max-width: 1024px) {
     .login-wrap{
         width: 100%;
         height: 100vh;
+        h1{
+            font-size: 40px !important;
+        }
     }
 
     
@@ -126,7 +130,7 @@ background-size: cover;
         height: 60%;
         
      label{
-        font-size: 35px;
+        font-size: 25px !important;
      }    
     input{
         width: 90%;
@@ -141,12 +145,12 @@ background-size: cover;
         width: 90%;
         /* background-color: red; */
         p{
-            font-size: 26px;
+            font-size: 15px !important;
         }
     }
 
     .chek{
-        width: 60%;
+        width: 20%;
         /* border: 5px solid black; */
         /* display: flex; */
         /* align-items: center; */

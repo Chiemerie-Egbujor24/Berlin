@@ -19,9 +19,9 @@ const Checkout = () => {
   function decrement(){
     
     setChange(change - 1)
-    if(change <=0){
-      return;
-    }
+    // if(change <=0){
+    //   return;
+    // }
   }
   useEffect(()=>{
     const interval = setInterval(() =>{
@@ -43,7 +43,8 @@ const Checkout = () => {
   ];
   return (
     <>
-    <div className="Product-details">Product Details </div><br /><br /><br /><br /><br />
+     <div className="Product-details0">
+      Product Details </    div><br /><br /><br /><br /><br /> 
     <div className="changing">
       <FaChevronCircleLeft onClick={decrement} size={50} className="click"/>
       <div className="changing-images">
@@ -85,8 +86,8 @@ const Checkout = () => {
         interoperable internal or “organic”
          sources credibly innovate granular internal .</p><br /><br />
          <div className="input-holder">
-              <div className="email"><p>Your email here</p></div>
-                <button className="button">Shop Now</button>
+              <input type="text" placeholder="Your email here"/>
+                <button className="button0">Shop Now</button>
               </div>
     </div>
     </>

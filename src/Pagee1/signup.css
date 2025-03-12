@@ -12,7 +12,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
+    /* border: 5px solid black; */
     background: url("../Images/sunset.jfif");
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +22,7 @@
 
 .signup-image{
     width: 40%;
-    height: 80%;
+    height: 75%;
     box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
@@ -35,18 +36,18 @@
 }
 
 .signup-text{
-    width: 40%;
-    height: 80%;
+    width: 45%;
+    height: 75%;
     /* background-color:black; */
     box-shadow: inset 10px 10px 90px rgba(0, 0, 0, 0.3);
-    background: url("../Images/sunset.jfif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
+    
     gap: 5%;
     h2{
         color:black;
@@ -56,7 +57,7 @@
 
 input{
     width: 70%;
-    height: 11%;
+    height: 15%;
     border-radius: 30px;
     padding: 10px;
     font-size: 25px;
@@ -68,7 +69,7 @@ input::placeholder{
 }
 button{
     width: 70%;
-    height: 11%;
+    height: 15%;
     border-radius: 30px;
     font-size: 25px;
     color: white;
@@ -77,16 +78,23 @@ button{
 
 
 
-@media  (max-width: 720px) and (max-width:1024px) {
+
+@media screen and (max-width: 1024px) {
     .signup-wrapper{
         display: flex;
+        width: 100%;
+        
         flex-direction: column;
+        h1{
+            font-size: 40px !important;
+        }
     }
 
     .signup-image  {
         width: 99%;
         h1{
             text-align: center;
+            font-size: 27px;
         }
 
        
@@ -95,8 +103,15 @@ button{
     .signup-text{
         width: 100%;
 
+       
+        h2{
+            font-size: 35px !important;
+        }
         input, button{
-            height: 15%;
+            width: 90% !important;
+            height: 18% !important;
+            font-size: 15px !important;
+
         }
 
     }

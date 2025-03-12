@@ -11,7 +11,7 @@ const Home = () => {
           <i>60% Discount</i>
           <h1>Winter <br /> Collection</h1>
           <p>Best Clothes Collection By 2020!</p>
-          <button className="button1">Shop Now</button>
+          <button>Shop Now</button>
         </div>
       </div><br /><br /><br /><br />
 
@@ -135,7 +135,7 @@ const Home = () => {
           <div className="our2">
             <div className="input1-holder">
               <div className="email"><p>Your email here</p></div>
-              <button className="button2">Shop Now</button>
+              <button className="button0">Shop Now</button>
             </div>
           </div>
         </div>

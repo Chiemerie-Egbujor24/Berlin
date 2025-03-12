@@ -67,7 +67,7 @@ const Category = () => {
             <div className="our2">
               <div className="input1-holder">
               <div className="email"><p>Your email here</p></div>
-                <button className="button2">Shop Now</button>
+                <button className="button0">Shop Now</button>
               </div>
             </div>
           </div>

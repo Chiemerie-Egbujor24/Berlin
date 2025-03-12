@@ -12,27 +12,95 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgb(170, 211, 227),rgb(184, 184, 243) );
+    background-image: url("../Images/productDetails.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .returning{
     width: 100%;
     height: 30vh;
-    background-color: gold;
+    /* background-color: gold; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    p{
+        word-spacing: 6px;
+    }
 }
 
 .clickhere{
-  width: 70%;
-  height: 25%;
-  background-color: gray;
+  width: 80%;
+  height: 20%;
+  background-color: rgba(128, 128, 128, 0.508);
   display: flex;
   align-items: center;
   /* flex-direction: column; */
   /* justify-content: center; */
   padding: 10px;
-  font-size: 25px;
+  font-size:15px;
+}
+
+.user-password{
+    width: 100%;
+    height: 10vh;
+    /* background-color: black; */
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    gap: 4%;
+    span{
+        color: red;
+    }
+    input{
+        width: 20%;
+        height: 85%;
+        font-size: 17px;
+        border-radius: 0%;
+        border: 3px solid rgba(0, 0, 0, 0.208);
+    }
+
+}
+
+.login-remember1{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    padding: 10px;
+    button{
+        width: 15%;
+        height: 60%;
+        border-radius: 0%;
+        color: black;
+        border: 3px solid rgba(0, 0, 0, 0.268);
+        background-color: transparent;
+    }
+}
+
+.check-remember{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 16%;
+    height: 60%;
+    /* background-color: blueviolet; */
+    input{
+        width: 20%;
+        height: 30%;
+    }
+}
+
+.here{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -10,12 +10,12 @@ main{
  
 }
 
+
 @media (max-width: 720px) and (max-width:1024px) {
     main{
         width: 100%;
         height: max-content;
-        /* height: 100vh; */
-        /* background-color: red; */
+     
     }
 
    
